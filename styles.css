@@ -1,0 +1,30 @@
+a.dc-rentry-linker__link {
+  display: inline;
+  padding: 0.06em 0.22em;
+  border: 1px solid #b7c9ff;
+  border-radius: 3px;
+  color: #183d91 !important;
+  background: #eaf0ff;
+  font-weight: 700;
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 2px;
+  overflow-wrap: anywhere;
+}
+
+a.dc-rentry-linker__link::after {
+  content: " \2197";
+  font-size: 0.76em;
+  opacity: 0.72;
+}
+
+a.dc-rentry-linker__link:hover {
+  color: #0e2e76 !important;
+  background: #dce7ff;
+  border-color: #7fa1ff;
+}
+
+a.dc-rentry-linker__link:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+}

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "DCInside Rentry 코드 링크",
+  "version": "1.1.0",
+  "description": "디시인사이드 게시글의 Rentry 코드를 클릭 가능한 새 탭 링크로 바꿍니다.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://gall.dcinside.com/*",
+        "*://m.dcinside.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "dcinside-rentry-linker@local"
+    },
+    "gecko_android": {}
+  }
+}
